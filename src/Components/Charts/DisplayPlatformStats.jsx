@@ -1,10 +1,7 @@
 import React, {useEffect, useState } from 'react';
 import { Chart } from "react-google-charts";
 
-const options = {
-    title: "Video Game Detail Chart",
-    legend: { postion: "bottom"},
-};
+
 
 const DisplayPlatformStats = ({videoGames}) => {
 
@@ -31,7 +28,10 @@ const DisplayPlatformStats = ({videoGames}) => {
         .reduce((total, currentnum) => total + currentnum, 0)
         .toFixed(2);
 
-        return [platform, parseFloat(sum), "silver"]
+        let globalSalesTotal = allGamesForPlatform.map(game => {return(game.globalSales)}).reduce((currIndex, prevIndex) => (currIndex + prevIndex))
+
+
+        return [platform, globalSalesTotal, "red"]
     });
 
     //console.log("Platform Arrays", platformArrays)

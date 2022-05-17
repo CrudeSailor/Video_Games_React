@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 
+
 const SearchBar = (props) => {
     
     const [search, setSearch] = useState("");
     function SearchResults(event) {
         event.preventDefault();
+        
 
         let response = props.games.filter((element) => {
             if (element.name.includes(search)) {

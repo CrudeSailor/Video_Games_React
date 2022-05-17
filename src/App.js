@@ -1,5 +1,7 @@
 import React, {useEffect, useState } from 'react';
 import axios from 'axios';
+import SearchBar from './components/SearchBar/SearchBar';
+import DisplayPlatformStats from './components/Charts/DisplayPlatformStats';
 
 function App() {
 
