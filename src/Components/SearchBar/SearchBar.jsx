@@ -5,10 +5,10 @@ const SearchBar = (props) => {
     
     const [search, setSearch] = useState("");
     function SearchResults(event) {
-        event.preventDefault();
+       event.preventDefault();
         
 
-        let response = props.games.filter((element) => {
+        let response = props.videoGames.filter((element) => {
             if (element.name.includes(search)) {
              return true;   
             }

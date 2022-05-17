@@ -31,7 +31,7 @@ const DisplayPlatformStats = ({videoGames}) => {
         let globalSalesTotal = allGamesForPlatform.map(game => {return(game.globalSales)}).reduce((currIndex, prevIndex) => (currIndex + prevIndex))
 
 
-        return [platform, globalSalesTotal, "red"]
+        return [platform, globalSalesTotal, "baby blue"]
     });
 
     //console.log("Platform Arrays", platformArrays)
