@@ -1,0 +1,8 @@
+input{
+    background: rgba(255, 255, 255, 0.760);
+    border: 1px;
+}
+
+::placeholder{
+    color: #0d51fd
+}

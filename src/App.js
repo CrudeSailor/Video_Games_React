@@ -25,8 +25,7 @@ async function getVideoGames() {
     <div className="App">
       <SearchBar videoGames={videoGames}/>
       <DisplayPlatformStats videoGames={videoGames}/>
-    <h1>Video Games!</h1>
-    <p>I'm pretty awesome, just so you know</p>
+   
     </div>
   );
 }

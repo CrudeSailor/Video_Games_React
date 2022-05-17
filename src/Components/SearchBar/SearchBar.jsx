@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import "./SearchBar.css"
 
 const SearchBar = (props) => {
     
@@ -36,7 +36,7 @@ const SearchBar = (props) => {
                 <div>
                    <input
                      type="text"
-                     placeholder="Search here..."
+                     placeholder="Ex. Super Mario 3"
                      value={search}
                      onChange={(e) => setSearch(e.target.value)}
                      /> 
